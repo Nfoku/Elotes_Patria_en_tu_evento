@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elotes Patria | Elotes, Esquites y Churros para Eventos en Zapopan y Guadalajara</title>
+<meta name="description" content="Catering de elotes, esquites, tostielotes, garbanzo, charolas y churros para bodas, fiestas, eventos corporativos y gubernamentales. Montaje y personal uniformado. Desde 100 piezas. Zapopan, Jalisco.">
+<meta name="theme-color" content="#1E4D2B">
+<!-- Open Graph: así se ve el enlace al compartirlo en WhatsApp / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:title" content="Elotes Patria | Llévanos a tu evento">
+<meta property="og:description" content="Elotes, esquites, tostielotes y churros para tu boda, fiesta o evento corporativo. Arma tu pedido y te cotizamos sin compromiso.">
+<meta property="og:image" content="img/og-cover.jpg">
+<!-- TODO al publicar: agregar <link rel="canonical" href="https://TU-DOMINIO/"> y usar URL absoluta en og:image -->
+<link rel="icon" type="image/webp" href="img/logo.webp">
+<link rel="preload" as="image" href="img/hero-charola.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FoodEstablishment",
+  "name":"Elotes Patria",
+  "description":"Catering de elotes, esquites y churros para eventos: bodas, fiestas, eventos corporativos y gubernamentales.",
+  "servesCuisine":"Mexicana",
+  "telephone":"+52 33 1113 0209",
+  "image":"img/og-cover.jpg",
+  "areaServed":["Zapopan","Guadalajara","Zona Metropolitana de Guadalajara"],
+  "address":{"@type":"PostalAddress","addressLocality":"Zapopan","addressRegion":"Jalisco","addressCountry":"MX"},
+  "department":[
+    {"@type":"FoodEstablishment","name":"Elotes Patria - Plaza Patria","address":{"@type":"PostalAddress","streetAddress":"Frente a Plaza Patria","addressLocality":"Zapopan","addressRegion":"Jalisco","addressCountry":"MX"}},
+    {"@type":"FoodEstablishment","name":"Elotes Patria - Basílica de Zapopan","address":{"@type":"PostalAddress","streetAddress":"Andador frente a la Basílica, Prol. 20 de Noviembre","addressLocality":"Zapopan","addressRegion":"Jalisco","addressCountry":"MX"}}
+  ]
+}
+</script>
+<style>
+:root{--primary-green:#1E4D2B;--primary-green-dark:#14351D;--green-soft:#2a6b3d;--secondary-gold:#F4B41A;--accent-orange:#E07B22;--bg-cream:#FDF8EE;--bg-card:#FFF;--text-dark:#1C2526;--text-muted:#556063;--border-color:#E7E1D3;--radius:16px;--shadow:0 10px 30px rgba(30,77,43,.10);--header-h:68px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 12px)}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg-cream);color:var(--text-dark);line-height:1.6;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Outfit',sans-serif;font-weight:700;line-height:1.2}
+img{max-width:100%;height:auto;display:block}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--secondary-gold);outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* BOTONES: un solo primario (dorado) en toda la página; WhatsApp es secundario */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border-radius:50px;font-weight:700;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:transform .2s,background .25s,color .25s;font-family:inherit;font-size:1rem;padding:.7rem 1.3rem;line-height:1.2}
+.btn-gold{background:var(--secondary-gold);color:var(--primary-green-dark)}
+.btn-gold:hover{transform:translateY(-2px);background:#ffc531}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.btn-ghost:hover{border-color:#25D366;color:#fff;background:rgba(37,211,102,.15)}
+.btn-ghost i{color:#25D366}
+.btn-outline{background:#fff;color:var(--primary-green);border-color:var(--primary-green)}
+.btn-outline:hover{background:var(--primary-green);color:#fff}
+
+/* HEADER */
+header{background:var(--primary-green);color:#fff;position:sticky;top:0;z-index:1000;box-shadow:0 4px 15px rgba(0,0,0,.12)}
+.nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:.45rem 1.5rem;gap:1rem;min-height:var(--header-h)}
+.logo img{height:54px;width:auto}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{color:#fff;text-decoration:none;font-weight:600;font-size:.95rem;transition:color .25s}
+.nav-links a:hover{color:var(--secondary-gold)}
+.nav-right{display:flex;align-items:center;gap:.6rem}
+.nav-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer;width:44px;height:44px}
+
+/* HERO */
+.hero{position:relative;background:radial-gradient(circle at 75% 35%,var(--green-soft),var(--primary-green) 55%,var(--primary-green-dark));color:#fff;overflow:hidden}
+.hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:2.5rem;padding:4rem 1.5rem 4.2rem}
+.hero-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(244,180,26,.16);border:1px solid var(--secondary-gold);color:var(--secondary-gold);padding:.4rem 1.1rem;border-radius:50px;font-size:.85rem;font-weight:700;margin-bottom:1.3rem}
+.hero h1{font-size:clamp(2.2rem,4.6vw,3.3rem);margin-bottom:1.1rem}
+.hero h1 .accent{color:var(--secondary-gold)}
+.hero p.lead{font-size:1.15rem;opacity:.95;margin-bottom:1.8rem;max-width:40ch}
+.hero-cta{display:flex;gap:.9rem;flex-wrap:wrap}
+.hero-cta .btn{font-size:1.05rem;padding:.95rem 1.7rem}
+.hero-micro{margin-top:1.1rem;font-size:.9rem;opacity:.85;display:flex;gap:1.2rem;flex-wrap:wrap}
+.hero-micro i{color:var(--secondary-gold);margin-right:.3rem}
+.hero-photo{position:relative}
+.hero-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:24px;box-shadow:0 30px 60px rgba(0,0,0,.4);transform:rotate(2deg);border:6px solid #fff}
+.hero-sticker{position:absolute;left:-18px;bottom:-18px;background:var(--secondary-gold);color:var(--primary-green-dark);border-radius:18px;padding:.8rem 1.1rem;font-family:'Outfit';font-weight:800;line-height:1.1;box-shadow:0 12px 24px rgba(0,0,0,.25);transform:rotate(-4deg)}
+.hero-sticker small{display:block;font-family:'Plus Jakarta Sans';font-weight:600;font-size:.75rem}
+.kernel{position:absolute;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ffd34d,var(--secondary-gold) 70%);opacity:.85}
+.hero .k1{width:22px;height:22px;top:18%;left:3%}.hero .k2{width:14px;height:14px;top:84%;left:8%}.hero .k3{width:18px;height:18px;top:8%;right:5%}
+
+/* FRANJA DE CONFIANZA */
+.trust{background:var(--secondary-gold);color:var(--primary-green-dark)}
+.trust-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding:1rem 1.5rem}
+.trust-item{display:flex;align-items:center;justify-content:center;gap:.55rem;font-weight:700;font-size:.95rem}
+
+/* SECCIONES */
+.section{max-width:1160px;margin:5rem auto;padding:0 1.5rem}
+.section-title{text-align:center;margin-bottom:2.5rem}
+.eyebrow{display:inline-block;color:var(--accent-orange);font-weight:800;letter-spacing:1px;text-transform:uppercase;font-size:.82rem;margin-bottom:.4rem}
+.section-title h2{font-size:clamp(1.8rem,3vw,2.3rem);color:var(--primary-green)}
+.section-title p{color:var(--text-muted);max-width:56ch;margin:.7rem auto 0}
+
+/* TIPOS DE EVENTO */
+.events-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.event-card{background:#fff;border:1px solid var(--border-color);border-radius:var(--radius);padding:1.6rem 1.3rem;text-align:left;display:flex;flex-direction:column;gap:.6rem;box-shadow:var(--shadow);transition:transform .25s,border-color .25s}
+.event-card:hover{transform:translateY(-4px);border-color:var(--secondary-gold)}
+.event-icon{width:52px;height:52px;border-radius:14px;background:var(--primary-green);color:var(--secondary-gold);display:flex;align-items:center;justify-content:center;font-size:1.35rem}
+.event-card h3{color:var(--primary-green-dark);font-size:1.15rem}
+.event-card p{color:var(--text-muted);font-size:.9rem;flex:1}
+.event-link{background:none;border:none;padding:0;font:inherit;font-weight:700;color:var(--accent-orange);cursor:pointer;text-align:left;display:inline-flex;align-items:center;gap:.4rem}
+.event-link:hover{text-decoration:underline}
+
+/* MENÚ */
+.menu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.3rem}
+.menu-card{background:#fff;border:1px solid var(--border-color);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.menu-card:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(30,77,43,.16)}
+.menu-card-img{position:relative;aspect-ratio:4/3;background:#fff;overflow:hidden}
+.menu-card-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .35s,transform .45s}
+.menu-card-img img.alt{opacity:0}
+@media(hover:hover){.menu-card:hover .menu-card-img img.alt{opacity:1}.menu-card:hover .menu-card-img img{transform:scale(1.03)}}
+.badge-new{position:absolute;top:12px;left:12px;z-index:2;background:var(--accent-orange);color:#fff;font-weight:800;font-size:.75rem;letter-spacing:.5px;text-transform:uppercase;padding:.3rem .7rem;border-radius:50px}
+.menu-card-body{padding:1rem 1.15rem 1.2rem;display:flex;flex-direction:column;gap:.35rem;flex:1}
+.menu-card-body h3{font-size:1.1rem;color:var(--primary-green-dark)}
+.menu-card-body p{font-size:.88rem;color:var(--text-muted);flex:1}
+.add-btn{margin-top:.6rem;align-self:flex-start;background:var(--bg-cream);border:1.5px solid var(--primary-green);color:var(--primary-green);border-radius:50px;padding:.45rem .95rem;font:inherit;font-weight:700;font-size:.85rem;cursor:pointer;transition:background .2s,color .2s}
+.add-btn:hover{background:var(--primary-green);color:#fff}
+.menu-note{text-align:center;color:var(--text-muted);margin-top:1.6rem;font-size:.92rem}
+
+/* CÓMO FUNCIONA */
+.how{background:#fff;border-top:1px solid var(--border-color);border-bottom:1px solid var(--border-color)}
+.how-inner{max-width:1000px;margin:0 auto;padding:4rem 1.5rem}
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.how-step{text-align:center;padding:1.5rem 1rem;background:var(--bg-cream);border-radius:var(--radius)}
+.how-num{width:52px;height:52px;margin:0 auto .9rem;border-radius:50%;background:var(--primary-green);color:var(--secondary-gold);display:flex;align-items:center;justify-content:center;font-family:'Outfit';font-weight:800;font-size:1.4rem}
+.how-step h3{color:var(--primary-green-dark);margin-bottom:.35rem;font-size:1.1rem}
+.how-step p{font-size:.92rem;color:var(--text-muted)}
+
+/* GALERÍA */
+.gallery-wrap{position:relative}
+.gallery-grid{display:flex;gap:1.2rem;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;padding:.3rem .2rem 1rem;scrollbar-width:thin;scrollbar-color:var(--primary-green) #E2E8F0}
+.gallery-item{position:relative;display:block;flex:0 0 min(85%,420px);scroll-snap-align:start;aspect-ratio:4/3;overflow:hidden;border-radius:var(--radius);background:#E2E8F0;box-shadow:var(--shadow)}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.gallery-item:hover img{transform:scale(1.05)}
+.gallery-caption{position:absolute;left:0;right:0;bottom:0;padding:1.6rem 1rem .8rem;background:linear-gradient(transparent,rgba(20,53,29,.9));color:#fff;font-weight:600;font-size:.95rem}
+.gallery-nav{position:absolute;top:calc(50% - 1rem);transform:translateY(-50%);z-index:2;width:44px;height:44px;border-radius:50%;border:none;background:rgba(255,255,255,.95);color:var(--primary-green);font-size:1.1rem;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.gallery-nav:hover{background:var(--secondary-gold)}
+.gallery-nav:disabled{opacity:0;pointer-events:none}
+.gallery-nav.prev{left:-8px}.gallery-nav.next{right:-8px}
+.gallery-more{text-align:center;margin-top:1.2rem}
+
+/* SUCURSALES */
+.branches-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
+.branch-card{display:flex;align-items:flex-start;gap:15px;background:#fff;padding:1.2rem 1.4rem;border-radius:var(--radius);border-left:4px solid var(--secondary-gold);box-shadow:var(--shadow)}
+.branch-card>i{font-size:1.5rem;color:var(--primary-green);margin-top:3px}
+.branch-card p{font-size:.88rem;color:var(--text-muted)}
+.branch-card a{display:inline-block;margin-top:.35rem;font-weight:700;font-size:.88rem;color:var(--accent-orange);text-decoration:none}
+.branch-card a:hover{text-decoration:underline}
+
+/* COTIZADOR */
+.calculator-card{position:relative;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:2.5rem;border:1px solid var(--border-color)}
+.form-success{display:none;background:#ECFDF3;border:1px solid var(--primary-green);color:var(--primary-green-dark);border-radius:var(--radius);padding:1.2rem 1.5rem;margin-bottom:1.5rem;font-weight:600}
+.form-success.show{display:block}
+.progress-wrapper{position:sticky;top:calc(var(--header-h) + 8px);z-index:5;background:#F3FAF4;border-radius:var(--radius);padding:1rem 1.3rem;margin-bottom:2rem;border:2px dashed var(--secondary-gold);box-shadow:0 6px 18px rgba(30,77,43,.08)}
+.progress-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:.6rem;font-weight:700;flex-wrap:wrap;gap:.3rem}
+.progress-bar-container{width:100%;height:14px;background:#E2E8F0;border-radius:10px;overflow:hidden;margin-bottom:.45rem}
+.progress-bar-fill{height:100%;width:0;background:linear-gradient(90deg,var(--secondary-gold),var(--primary-green));transition:width .3s ease-in-out}
+.status-text{font-size:.92rem;font-weight:600;color:var(--primary-green)}
+.form-group{margin-bottom:1.4rem}
+.form-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:0 1.5rem}
+label{display:block;font-weight:600;margin-bottom:.45rem;font-size:.95rem}
+.opt{font-weight:500;color:var(--text-muted);font-size:.85rem}
+input[type=text],input[type=email],input[type=tel],input[type=date],input[type=number],select,textarea{width:100%;padding:.8rem 1rem;border:1px solid #8A96A3;border-radius:10px;font-family:inherit;font-size:1rem;background:#fff;transition:border-color .25s}
+input:focus,select:focus,textarea:focus{border-color:var(--primary-green)}
+.step-title{margin-bottom:1rem;color:var(--primary-green);font-size:1.25rem}
+.divider{border:none;border-top:1px solid var(--border-color);margin:2rem 0}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem;margin-bottom:2rem}
+.product-item{background:#FAFAF7;border:1.5px solid var(--border-color);padding:.8rem;border-radius:14px;display:flex;gap:.9rem;align-items:center;transition:border-color .25s,background .25s,box-shadow .25s}
+.product-item.active{border-color:var(--primary-green);background:#F3FAF4}
+.product-item.flash{box-shadow:0 0 0 4px rgba(244,180,26,.55)}
+.product-thumb{width:84px;height:63px;border-radius:10px;object-fit:cover;flex-shrink:0;background:#fff}
+.product-main{flex:1;min-width:0}
+.product-info h4{font-size:1rem;color:var(--primary-green-dark);margin-bottom:.15rem;display:flex;gap:.4rem;align-items:center;flex-wrap:wrap}
+.product-info h4 .tag{background:var(--accent-orange);color:#fff;font-size:.65rem;padding:.12rem .45rem;border-radius:50px;text-transform:uppercase;letter-spacing:.4px}
+.product-info p{font-size:.8rem;color:var(--text-muted);margin-bottom:.5rem}
+.counter-control{display:flex;align-items:center;gap:8px}
+.btn-counter{width:38px;height:38px;border-radius:50%;border:2px solid var(--primary-green);background:#fff;color:var(--primary-green);font-weight:700;font-size:1.1rem;cursor:pointer;transition:all .2s}
+.btn-counter:hover{background:var(--primary-green);color:#fff}
+.counter-input{width:58px!important;text-align:center;padding:.35rem!important;font-weight:700}
+.step-hint{font-size:.75rem;color:var(--text-muted)}
+.guests-hint{font-size:.82rem;color:var(--text-muted);margin-top:.35rem}
+.btn-submit{width:100%;background:var(--primary-green);color:#fff;padding:1.15rem;border:none;border-radius:50px;font-size:1.15rem;font-weight:700;cursor:pointer;transition:all .3s;box-shadow:0 4px 15px rgba(30,77,43,.2);font-family:inherit}
+.btn-submit:disabled{background:#E2E8F0;color:#4B5563;cursor:not-allowed;box-shadow:none}
+.btn-submit:not(:disabled):hover{background:var(--primary-green-dark);transform:translateY(-2px)}
+.submit-note{text-align:center;font-size:.85rem;color:var(--text-muted);margin-top:.8rem}
+
+/* FOOTER */
+footer{background:var(--primary-green-dark);color:#fff;padding:3rem 1.5rem 1.5rem;margin-top:5rem}
+.footer-container{max-width:1100px;margin:0 auto 2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem}
+.footer-container img{height:76px;width:auto;margin-bottom:1rem}
+.footer-container h4{margin-bottom:.6rem;color:var(--secondary-gold)}
+.footer-container p{opacity:.9;font-size:.95rem}
+.footer-container a{color:#fff}
+.footer-bottom{text-align:center;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.12);font-size:.88rem;opacity:.75}
+
+/* WHATSAPP FLOTANTE */
+.wa-float{position:fixed;right:18px;bottom:34px;z-index:1100;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;filter:drop-shadow(0 6px 14px rgba(0,0,0,.3));transition:transform .2s;animation:wa-pulse 2.4s ease-in-out infinite}
+.wa-float img{width:100%;height:100%}
+.wa-float:hover{transform:scale(1.08)}
+@keyframes wa-pulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}55%{box-shadow:0 0 0 16px rgba(37,211,102,0)}60%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+@media(prefers-reduced-motion:reduce){.wa-float{animation:none}}
+
+/* RESPONSIVE */
+@media(max-width:1024px){.menu-grid{grid-template-columns:repeat(3,1fr)}.events-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:860px){
+  .hero-inner{grid-template-columns:1fr;text-align:center;padding:2.5rem 1.5rem 3.2rem;gap:2rem}
+  .hero p.lead{margin-left:auto;margin-right:auto}
+  .hero-cta,.hero-micro{justify-content:center}
+  .hero-photo{max-width:440px;margin:0 auto}
+  .hero-sticker{left:-6px}
+  .kernel{display:none}
+  .trust-inner{grid-template-columns:1fr 1fr}
+  .trust-item{justify-content:flex-start;font-size:.88rem}
+  .how-grid{grid-template-columns:1fr}
+  .menu-grid{grid-template-columns:repeat(2,1fr);gap:1rem}
+  .nav-toggle{display:inline-flex;align-items:center;justify-content:center}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--primary-green-dark);flex-direction:column;align-items:stretch;gap:0;padding:.5rem 0}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:.9rem 1.5rem;border-top:1px solid rgba(255,255,255,.08)}
+}
+@media(max-width:600px){
+  :root{--header-h:62px}
+  .logo img{height:46px}
+  .nav-right .btn{padding:.55rem .9rem;font-size:.9rem}
+  /* Tarjetas de evento compactas: 2x2, ícono junto al título, sin descripción */
+  .events-grid{grid-template-columns:1fr 1fr;gap:.7rem}
+  .event-card{padding:.85rem .8rem;gap:.5rem}
+  .event-card .event-icon{width:38px;height:38px;font-size:1rem;border-radius:10px}
+  .event-card h3{font-size:.95rem}
+  .event-card p{display:none}
+  .event-link{font-size:.82rem}
+  .menu-card-body p{font-size:.82rem}
+  .menu-card-body h3{font-size:1rem}
+  .form-grid-2{grid-template-columns:1fr}
+  .calculator-card{padding:1.3rem}
+  .products-grid{grid-template-columns:1fr}
+  .section{margin:3.5rem auto}
+}
+@media(max-width:360px){.menu-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html,.gallery-grid{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-container">
+    <a href="#" class="logo" aria-label="Elotes Patria, inicio"><img src="img/logo.webp" alt="Elotes Patria" width="160" height="161"></a>
+    <nav class="nav-links" id="nav-links" aria-label="Principal">
+      <a href="#eventos">Eventos</a>
+      <a href="#menu-antojo">Menú</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#galeria" data-gallery-link>Galería</a>
+      <a href="#sucursales">Sucursales</a>
+    </nav>
+    <div class="nav-right">
+      <a href="#cotizador" class="btn btn-gold"><i class="fa-solid fa-list-check"></i> Arma tu pedido</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <span class="kernel k1"></span><span class="kernel k2"></span><span class="kernel k3"></span>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <span class="hero-badge"><i class="fa-solid fa-star"></i> Catering de elotes para eventos · Zapopan</span>
+      <h1>¡Llévanos a tu evento! La tradición del <span class="accent">elote</span> para tus invitados</h1>
+      <p class="lead">Elotes, esquites, tostielotes, charolas y ahora churros, con barra de aderezos, montaje y personal uniformado.</p>
+      <div class="hero-cta">
+        <a href="#cotizador" class="btn btn-gold"><i class="fa-solid fa-list-check"></i> Arma tu pedido</a>
+        <a href="https://wa.me/523311130209?text=Hola!%20quiero%20invitar%20a%20Elotes%20Patria%20a%20mi%20evento" class="btn btn-ghost" target="_blank" rel="noopener" data-track="wa"><i class="fa-brands fa-whatsapp"></i> Escríbenos</a>
+      </div>
+      <div class="hero-micro">
+        <span><i class="fa-solid fa-circle-check"></i>Sin pagos ni compromiso</span>
+        <span><i class="fa-solid fa-circle-check"></i>Desde 100 piezas</span>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="img/hero-charola.webp" alt="Charola de esquite con crema, queso, chile y limón sobre mantel bordado" width="1200" height="896" fetchpriority="high">
+      <div class="hero-sticker">+8 antojos<small>para tu evento</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- FRANJA DE CONFIANZA -->
+<section class="trust" aria-label="Por qué elegirnos">
+  <div class="trust-inner">
+    <div class="trust-item"><i class="fa-solid fa-utensils"></i> Desde 100 piezas</div>
+    <div class="trust-item"><i class="fa-solid fa-location-dot"></i> 2 sucursales en Zapopan</div>
+    <div class="trust-item"><i class="fa-solid fa-truck-ramp-box"></i> Montaje incluido</div>
+    <div class="trust-item"><i class="fa-solid fa-user-tie"></i> Personal uniformado</div>
+  </div>
+</section>
+
+<!-- TIPOS DE EVENTO -->
+<section class="section" id="eventos">
+  <div class="section-title">
+    <span class="eyebrow">Para cada ocasión</span>
+    <h2>¿Qué estás celebrando?</h2>
+    <p>Adaptamos la estación, las cantidades y el montaje al tipo de evento.</p>
+  </div>
+  <div class="events-grid">
+    <article class="event-card">
+      <div class="event-icon"><i class="fa-solid fa-ring"></i></div>
+      <h3>Bodas y XV años</h3>
+      <p>El antojo de media noche que tus invitados van a recordar, con montaje cuidado.</p>
+      <button type="button" class="event-link" data-evento="Boda">Cotizar mi boda <i class="fa-solid fa-arrow-right"></i></button>
+    </article>
+    <article class="event-card">
+      <div class="event-icon"><i class="fa-solid fa-cake-candles"></i></div>
+      <h3>Fiestas y cumpleaños</h3>
+      <p>Esquites, tostielotes y churros para grandes y chicos, sin que tú cocines nada.</p>
+      <button type="button" class="event-link" data-evento="Fiesta Privada / Cumpleaños">Cotizar mi fiesta <i class="fa-solid fa-arrow-right"></i></button>
+    </article>
+    <article class="event-card">
+      <div class="event-icon"><i class="fa-solid fa-briefcase"></i></div>
+      <h3>Corporativos</h3>
+      <p>Integraciones, aniversarios y activaciones de marca con servicio puntual y uniformado.</p>
+      <button type="button" class="event-link" data-evento="Evento Corporativo">Cotizar evento corporativo <i class="fa-solid fa-arrow-right"></i></button>
+    </article>
+    <article class="event-card">
+      <div class="event-icon"><i class="fa-solid fa-landmark"></i></div>
+      <h3>Gubernamentales</h3>
+      <p>Ferias, festejos patrios y eventos públicos con alto volumen de piezas.</p>
+      <button type="button" class="event-link" data-evento="Evento Gubernamental">Cotizar evento público <i class="fa-solid fa-arrow-right"></i></button>
+    </article>
+  </div>
+</section>
+
+<!-- MENÚ -->
+<section class="section" id="menu-antojo">
+  <div class="section-title">
+    <span class="eyebrow">Nuestro menú</span>
+    <h2>¿Qué llevamos a tu evento?</h2>
+    <p>Todo recién hecho, con barra de aderezos: crema, mayonesa, queso, chile y limón. Toca «Agregar» y lo sumamos a tu pedido.</p>
+  </div>
+  <div class="menu-grid">
+    <article class="menu-card">
+      <div class="menu-card-img"><img src="img/elote-palo.webp" alt="Elote cocido en palo con crema, queso y chile" width="800" height="600" loading="lazy" decoding="async"><img class="alt" src="img/elote-palo-2.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></div>
+      <div class="menu-card-body"><h3>Elote Cocido en Palo</h3><p>Elote tierno cocido al vapor, con crema, queso y chile al gusto.</p><button type="button" class="add-btn" data-add="elote_cocido">+ Agregar</button></div>
+    </article>
+    <article class="menu-card">
+      <div class="menu-card-img"><img src="img/elote-asado.webp" alt="Elotes asados al carbón" width="800" height="600" loading="lazy" decoding="async"><img class="alt" src="img/elote-asado-2.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></div>
+      <div class="menu-card-body"><h3>Elote Asado al Carbón</h3><p>Dorado al carbón, con ese sabor ahumado inconfundible y aderezos a elegir.</p><button type="button" class="add-btn" data-add="elote_asado">+ Agregar</button></div>
+    </article>
+    <article class="menu-card">
+      <div class="menu-card-img"><img src="img/esquite-vaso.webp" alt="Esquite en vaso con queso y chile" width="800" height="600" loading="lazy" decoding="async"><img class="alt" src="img/esquite-vaso-2.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></div>
+      <div class="menu-card-body"><h3>Esquite en Vaso</h3><p>Limón, crema y queso, o crema, mayo y queso. El clásico que a todos encanta.</p><button type="button" class="add-btn" data-add="esquites">+ Agregar</button></div>
+    </article>
+    <article class="menu-card">
+      <div class="menu-card-img"><img src="img/garbanzo-vaso.webp" alt="Garbanzo en vaso con chile" width="800" height="600" loading="lazy" decoding="async"></div>
+      <div class="menu-card-body"><h3>Garbanzo en Vaso</h3><p>Garbanzos cocidos, calientitos, servidos con chile y limón.</p><button type="button" class="add-btn" data-add="garbanzo">+ Agregar</button></div>
+    </article>
+    <article class="menu-card">
+      <div class="menu-card-img"><img src="img/tostielote.webp" alt="Tostielote: bolsa de totopos con elote, queso y chile" width="800" height="600" loading="lazy" decoding="async"><img class="alt" src="img/tostielote-2.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></div>
+      <div class="menu-card-body"><h3>Tostielotes</h3><p>Bolsa de totopos preparada con elote caliente, queso y aderezos.</p><button type="button" class="add-btn" data-add="tostielote">+ Agregar</button></div>
+    </article>
+    <article class="menu-card">
+      <div class="menu-card-img"><img src="img/charola-elote.webp" alt="Charola mediana de elote desgranado con aderezos" width="800" height="600" loading="lazy" decoding="async"></div>
+      <div class="menu-card-body"><h3>Charola Mediana de Elote</h3><p>Elote desgranado con crema, queso y chile, para compartir.</p><button type="button" class="add-btn" data-add="charola_elote">+ Agregar</button></div>
+    </article>
+    <article class="menu-card">
+      <div class="menu-card-img"><img src="img/charola-verdura.webp" alt="Charola de elote con garbanzo y chayote" width="800" height="600" loading="lazy" decoding="async"><img class="alt" src="img/charola-garbanzo.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></div>
+      <div class="menu-card-body"><h3>Charola de Elote con Verdura</h3><p>Elote con papa, chayote y garbanzo al vapor, con aderezos.</p><button type="button" class="add-btn" data-add="charola_verdura">+ Agregar</button></div>
+    </article>
+    <article class="menu-card">
+      <div class="menu-card-img"><span class="badge-new">Nuevo</span><img src="img/churros.webp" alt="Churros con azúcar y canela bañados en cajeta" width="800" height="600" loading="lazy" decoding="async"><img class="alt" src="img/churros-2.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></div>
+      <div class="menu-card-body"><h3>Churros</h3><p>Recién hechos, con azúcar y canela y un hilo de cajeta. El postre del evento.</p><button type="button" class="add-btn" data-add="churros">+ Agregar</button></div>
+    </article>
+  </div>
+  <p class="menu-note">¿No sabes cuánto pedir? Envíanos tu solicitud con el número de invitados y te asesoramos.</p>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section class="how" id="como-funciona">
+  <div class="how-inner">
+    <div class="section-title">
+      <span class="eyebrow">Fácil y sin compromiso</span>
+      <h2>Pedir es muy sencillo</h2>
+    </div>
+    <div class="how-grid">
+      <div class="how-step"><div class="how-num">1</div><h3>Arma tu menú</h3><p>Elige productos y cantidades en el cotizador. El mínimo por evento es de 100 piezas.</p></div>
+      <div class="how-step"><div class="how-num">2</div><h3>Envía tu solicitud</h3><p>Déjanos tus datos y la fecha. Sin pagos ni compromiso: es solo tu solicitud.</p></div>
+      <div class="how-step"><div class="how-num">3</div><h3>Te cotizamos</h3><p>Te contactamos por WhatsApp o correo con tu cotización y confirmamos los detalles.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA (se oculta sola mientras no haya fotos de Drive configuradas) -->
+<section class="section" id="galeria">
+  <div class="section-title">
+    <span class="eyebrow">Eventos realizados</span>
+    <h2>Así montamos tus eventos</h2>
+    <p>Montaje, personal capacitado y uniformado, y la presentación de cada estación.</p>
+  </div>
+  <div class="gallery-wrap">
+    <button type="button" class="gallery-nav prev" id="gallery-prev" aria-label="Ver imagen anterior"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="gallery-grid" id="gallery-grid" tabindex="0" aria-label="Galería de eventos, desplázate en horizontal"></div>
+    <button type="button" class="gallery-nav next" id="gallery-next" aria-label="Ver imagen siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+  <div class="gallery-more"><a id="gallery-more" class="btn btn-outline" style="display:none" target="_blank" rel="noopener"><i class="fa-brands fa-google-drive"></i> Ver más eventos</a></div>
+</section>
+
+<!-- SUCURSALES -->
+<section class="section" id="sucursales">
+  <div class="section-title"><span class="eyebrow">Visítanos</span><h2>Nuestras sucursales</h2></div>
+  <div class="branches-container">
+    <div class="branch-card"><i class="fa-solid fa-location-dot"></i><div><strong>Sucursal Plaza Patria</strong><p>Enfrente de Plaza Patria y KFC, Zapopan</p><a href="https://maps.app.goo.gl/n6S1YfWhhVp3teMA8" target="_blank" rel="noopener">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div>
+    <div class="branch-card"><i class="fa-solid fa-church"></i><div><strong>Sucursal Basílica Zapopan</strong><p>Esquina del andador frente a la Basílica (Prol. 20 de Noviembre)</p><a href="https://maps.app.goo.gl/Kdx2vwWo4xy8vYeM8" target="_blank" rel="noopener">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div>
+  </div>
+</section>
+
+<!-- COTIZADOR -->
+<section class="section" id="cotizador" style="max-width:1000px">
+  <div class="section-title">
+    <span class="eyebrow">Arma tu pedido</span>
+    <h2>Arma tu pedido y te cotizamos</h2>
+    <p>Elige tus productos y envíanos tu solicitud. Te cotizamos sin compromiso. Mínimo de <strong>100 piezas</strong> por evento.</p>
+  </div>
+
+  <div class="calculator-card">
+    <div class="form-success" id="form-success" role="status">
+      <i class="fa-solid fa-circle-check"></i> ¡Solicitud enviada! Revisaremos tu información y te contactaremos por WhatsApp o correo con tu cotización.
+    </div>
+
+    <!-- Las respuestas llegan por correo a wrodzar@gmail.com vía FormSubmit.
+         Primer envío desde la página publicada = correo de activación a ese buzón. -->
+    <form action="https://formsubmit.co/wrodzar@gmail.com" method="POST" id="event-form" accept-charset="UTF-8">
+      <input type="hidden" name="_subject" value="Nueva solicitud de evento - Elotes Patria">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" id="next-url" value="">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+      <h3 class="step-title"><i class="fa-solid fa-utensils"></i> 1. Elige tu menú</h3>
+      <div class="progress-wrapper">
+        <div class="progress-header"><span>Tu pedido va así:</span><span id="pieces-count">0 / 100 piezas</span></div>
+        <div class="progress-bar-container"><div class="progress-bar-fill" id="progress-fill"></div></div>
+        <div class="status-text" id="status-message" aria-live="polite"></div>
+      </div>
+      <div class="products-grid" id="products-grid"></div>
+
+      <hr class="divider">
+
+      <h3 class="step-title"><i class="fa-solid fa-calendar-day"></i> 2. Datos del evento</h3>
+      <div class="form-grid-2">
+        <div class="form-group"><label for="tipo_evento">Tipo de evento <span class="opt">(opcional)</span></label>
+          <select id="tipo_evento" name="Tipo_Evento">
+            <option value="">Selecciona una opción</option>
+            <option value="Boda">Boda / XV años</option>
+            <option value="Fiesta Privada / Cumpleaños">Fiesta privada / Cumpleaños</option>
+            <option value="Evento Corporativo">Evento corporativo</option>
+            <option value="Evento Gubernamental">Evento gubernamental</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+        <div class="form-group"><label for="fecha">Fecha del evento <span class="opt">(opcional)</span></label><input type="date" id="fecha" name="Fecha_Evento"></div>
+      </div>
+      <div class="form-grid-2">
+        <div class="form-group"><label for="invitados">Número aproximado de invitados <span class="opt">(opcional)</span></label><input type="number" id="invitados" name="Invitados_Aprox" min="1" inputmode="numeric" placeholder="Ej. 150"><div class="guests-hint" id="guests-hint" aria-live="polite"></div></div>
+        <div class="form-group"><label for="ubicacion">Ubicación / municipio <span class="opt">(opcional)</span></label><input type="text" id="ubicacion" name="Ubicacion" placeholder="Ej. Zapopan, Jal." autocomplete="address-level2"></div>
+      </div>
+
+      <hr class="divider">
+
+      <h3 class="step-title"><i class="fa-solid fa-user"></i> 3. ¿A quién le enviamos la cotización?</h3>
+      <div class="form-grid-2">
+        <div class="form-group"><label for="nombre">Nombre completo / Empresa *</label><input type="text" id="nombre" name="Nombre_Cliente" required placeholder="Ej. Sofía Mendoza" autocomplete="name"></div>
+        <div class="form-group"><label for="telefono">WhatsApp / Teléfono *</label><input type="tel" id="telefono" name="Telefono" required placeholder="33 1234 5678" autocomplete="tel" inputmode="tel" pattern="[0-9\s\-\+\(\)]{10,}" title="Escribe al menos 10 dígitos"></div>
+      </div>
+      <div class="form-group"><label for="email">Correo electrónico <span class="opt">(opcional)</span></label><input type="email" id="email" name="email" placeholder="correo@ejemplo.com" autocomplete="email"></div>
+      <div class="form-group">
+        <label for="notas">Requerimientos especiales del lugar <span class="opt">(opcional)</span></label>
+        <textarea id="notas" name="Notas_Especiales" rows="3" placeholder="Ej. El evento es en un jardín en planta baja, requerimos montaje 1 hora antes."></textarea>
+      </div>
+
+      <input type="hidden" name="Total_Piezas_Acumuladas" id="hidden_total_pieces" value="0">
+      <input type="hidden" name="Resumen_Pedido" id="hidden_resumen" value="">
+      <button type="submit" id="btn-submit" class="btn-submit" disabled><i class="fa-solid fa-paper-plane"></i> Enviar mi solicitud</button>
+      <p class="submit-note">Sin pagos ni compromiso. Te contactamos con tu cotización.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-container">
+    <div>
+      <img src="img/logo.webp" alt="Elotes Patria" width="160" height="161" loading="lazy">
+      <p>El antojo de siempre para tus mejores momentos. Sabor tradicional, servicio profesional e higiene garantizada.</p>
+    </div>
+    <div>
+      <h4>Sucursales</h4>
+      <p>📍 Plaza Patria (frente a KFC)</p>
+      <p>📍 Andador Basílica de Zapopan (Prol. 20 de Noviembre)</p>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>&copy; <span id="year">2026</span> Elotes Patria · Zapopan, Jalisco.</p></div>
+</footer>
+
+<a href="https://wa.me/523311130209?text=Hola!%20quiero%20invitar%20a%20Elotes%20Patria%20a%20mi%20evento" class="wa-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp" data-track="wa"><img src="img/icon-wa.webp" alt="" width="60" height="60"></a>
+
+<script>
+/* ===== PRODUCTOS: única fuente de verdad del cotizador =====
+   id     → coincide con data-add="" de las tarjetas del menú
+   field  → nombre de la columna que llega al correo
+   step   → cuánto suma/quita cada clic (cada unidad = 1 pieza para el mínimo)
+   min    → (opcional) mínimo propio del producto: el primer + salta a ese número
+   Para agregar un producto: añade una línea aquí + su tarjeta en el menú. */
+const MINIMO = 100;
+const PRODUCTOS = [
+  {id:'esquites',        name:'Esquite en Vaso',              field:'Cant_Esquites_Vaso',         step:5, img:'img/esquite-vaso-th.webp',    desc:'Limón / Crema y queso / Crema, mayo y queso.'},
+  {id:'elote_cocido',    name:'Elote Cocido en Palo',         field:'Cant_Elote_Cocido',          step:5, img:'img/elote-palo-th.webp',      desc:'Tierno, cocido al vapor.'},
+  {id:'elote_asado',     name:'Elote Asado al Carbón',        field:'Cant_Elote_Asado',           step:5, min:30, img:'img/elote-asado-th.webp',     desc:'Dorado al carbón, sabor ahumado. Mínimo 30 pzas.'},
+  {id:'garbanzo',        name:'Garbanzo en Vaso',             field:'Cant_Garbanzo_Vaso',         step:5, img:'img/garbanzo-vaso-th.webp',   desc:'Calientito, con chile y limón.'},
+  {id:'tostielote',      name:'Tostielotes',                  field:'Cant_Tostielotes',           step:5, img:'img/tostielote-th.webp',      desc:'Totopos con elote caliente y aderezos.'},
+  {id:'charola_elote',   name:'Charola Mediana de Elote',     field:'Cant_Charola_Mediana_Elote', step:5, img:'img/charola-elote-th.webp',   desc:'Para compartir.'},
+  {id:'charola_verdura', name:'Charola de Elote con Verdura', field:'Cant_Charola_Elote_Verdura', step:5, img:'img/charola-verdura-th.webp', desc:'Papa, chayote y garbanzo al vapor.'},
+  {id:'churros',         name:'Churros',                      field:'Cant_Churros',               step:5, min:50, img:'img/churros-th.webp',         desc:'Azúcar, canela y cajeta. Mínimo 50 pzas.', nuevo:true}
+];
+const itemCounts = {};
+
+/* Medición opcional: si instalas Meta Pixel o GA4, estos eventos se envían solos */
+function track(evento, datos) {
+  try {
+    if (window.fbq) fbq('track', evento, datos || {});
+    if (window.gtag) gtag('event', evento, datos || {});
+  } catch (e) {}
+}
+
+function renderProductos() {
+  const grid = document.getElementById('products-grid');
+  PRODUCTOS.forEach(p => {
+    itemCounts[p.id] = 0;
+    const d = document.createElement('div');
+    d.className = 'product-item';
+    d.id = 'item-' + p.id;
+    d.innerHTML =
+      `<img class="product-thumb" src="${p.img}" alt="" width="84" height="63" loading="lazy">
+       <div class="product-main">
+         <div class="product-info"><h4>${p.name}${p.nuevo ? ' <span class="tag">Nuevo</span>' : ''}</h4><p>${p.desc}</p></div>
+         <div class="counter-control">
+           <button type="button" class="btn-counter" data-id="${p.id}" data-dir="-1" aria-label="Quitar ${p.step} de ${p.name}">−</button>
+           <input type="number" id="${p.id}" name="${p.field}" class="counter-input" value="0" min="0" readonly aria-label="Cantidad de ${p.name}">
+           <button type="button" class="btn-counter" data-id="${p.id}" data-dir="1" aria-label="Agregar ${p.step} de ${p.name}">+</button>
+           <span class="step-hint">${p.min ? `desde ${p.min}, luego ` : ``}de ${p.step} en ${p.step}</span>
+         </div>
+       </div>`;
+    grid.appendChild(d);
+  });
+  grid.addEventListener('click', e => {
+    const b = e.target.closest('.btn-counter');
+    if (b) adjustCount(b.dataset.id, Number(b.dataset.dir));
+  });
+}
+
+function adjustCount(id, dir) {
+  const p = PRODUCTOS.find(x => x.id === id);
+  if (!p) return;
+  /* Productos con mínimo propio (min): el primer + salta al mínimo; bajar del mínimo regresa a 0 */
+  const min = p.min || p.step;
+  let n = itemCounts[id] + dir * p.step;
+  if (dir > 0 && itemCounts[id] === 0) n = min;
+  if (n < min) n = 0;
+  itemCounts[id] = n;
+  document.getElementById(id).value = itemCounts[id];
+  document.getElementById('item-' + id).classList.toggle('active', itemCounts[id] > 0);
+  updateTotals();
+}
+
+function updateTotals() {
+  const total = PRODUCTOS.reduce((s, p) => s + itemCounts[p.id], 0);
+  const msg = document.getElementById('status-message');
+  const btn = document.getElementById('btn-submit');
+  document.getElementById('hidden_total_pieces').value = total;
+  document.getElementById('hidden_resumen').value =
+    PRODUCTOS.filter(p => itemCounts[p.id] > 0).map(p => `${p.name}: ${itemCounts[p.id]}`).join(' | ');
+  document.getElementById('pieces-count').textContent = `${total} / ${MINIMO} piezas`;
+  document.getElementById('progress-fill').style.width = Math.min(total / MINIMO * 100, 100) + '%';
+  if (total >= MINIMO) {
+    msg.innerHTML = `<i class="fa-solid fa-circle-check"></i> ¡Listo! Completa los datos del evento y envía tu solicitud (${total} piezas).`;
+    btn.disabled = false;
+  } else if (total === 0) {
+    msg.innerHTML = `<i class="fa-solid fa-seedling"></i> Agrega productos con el botón +. Mínimo ${MINIMO} piezas.`;
+    btn.disabled = true;
+  } else {
+    msg.innerHTML = `<i class="fa-solid fa-circle-chevron-up"></i> ¡Vas muy bien! Te faltan ${MINIMO - total} piezas.`;
+    btn.disabled = true;
+  }
+  updateGuestsHint(total);
+}
+
+/* Referencia informativa invitados vs piezas (no impone reglas) */
+function updateGuestsHint(total) {
+  const inv = Number(document.getElementById('invitados').value) || 0;
+  const el = document.getElementById('guests-hint');
+  el.textContent = inv > 0 ? `Llevas ${total} piezas para ${inv} invitados.` : '';
+}
+
+/* Tarjetas del menú → suman al cotizador */
+function initMenuAdd() {
+  document.querySelectorAll('[data-add]').forEach(b => b.addEventListener('click', () => {
+    const id = b.dataset.add;
+    adjustCount(id, 1);
+    track('AddToCart', {content_name: id});
+    const row = document.getElementById('item-' + id);
+    row.scrollIntoView({behavior: 'smooth', block: 'center'});
+    row.classList.add('flash');
+    setTimeout(() => row.classList.remove('flash'), 1200);
+  }));
+}
+
+/* Tarjetas de tipo de evento → preseleccionan el formulario */
+function initEventos() {
+  document.querySelectorAll('[data-evento]').forEach(b => b.addEventListener('click', () => {
+    document.getElementById('tipo_evento').value = b.dataset.evento;
+    document.getElementById('cotizador').scrollIntoView({behavior: 'smooth'});
+  }));
+}
+
+/* ===== GALERÍA: imágenes desde Google Drive =====
+   1) En Drive: clic derecho > Compartir > "Cualquier persona con el enlace" (Lector).
+   2) Pega el enlace en "drive". Para más fotos, agrega otra línea.
+   3) Opcional: enlace de carpeta en CARPETA_DRIVE para el botón "Ver más eventos".
+   Mientras no haya ningún enlace, la sección y su enlace del menú se ocultan solos. */
+const CARPETA_DRIVE = "";
+const GALERIA_EVENTOS = [
+  {drive:"", titulo:"Montaje de la estación"},
+  {drive:"", titulo:"Personal capacitado"},
+  {drive:"", titulo:"Equipo uniformado"},
+  {drive:"", titulo:"Presentación de esquites y elotes"}
+];
+
+function driveId(url) {
+  const m = (url || "").match(/\/d\/([\w-]+)/) || (url || "").match(/[?&]id=([\w-]+)/);
+  return m ? m[1] : null;
+}
+
+function renderGaleria() {
+  const grid = document.getElementById('gallery-grid');
+  const fotos = GALERIA_EVENTOS.filter(ev => driveId(ev.drive));
+  if (!fotos.length) {
+    document.getElementById('galeria').hidden = true;
+    document.querySelectorAll('[data-gallery-link]').forEach(a => a.hidden = true);
+    return false;
+  }
+  fotos.forEach(ev => {
+    const id = driveId(ev.drive);
+    const a = document.createElement('a');
+    a.className = 'gallery-item';
+    a.href = `https://drive.google.com/file/d/${id}/view`;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    const img = document.createElement('img');
+    img.src = `https://drive.google.com/thumbnail?id=${id}&sz=w1000`;
+    img.alt = ev.titulo;
+    img.loading = 'lazy';
+    img.referrerPolicy = 'no-referrer';
+    img.onerror = () => a.remove();
+    const cap = document.createElement('div');
+    cap.className = 'gallery-caption';
+    cap.textContent = ev.titulo;
+    a.append(img, cap);
+    grid.appendChild(a);
+  });
+  if (CARPETA_DRIVE) {
+    const more = document.getElementById('gallery-more');
+    more.href = CARPETA_DRIVE;
+    more.style.display = 'inline-flex';
+  }
+  return true;
+}
+
+function initCarrusel() {
+  const grid = document.getElementById('gallery-grid');
+  const prev = document.getElementById('gallery-prev');
+  const next = document.getElementById('gallery-next');
+  const paso = () => (grid.firstElementChild ? grid.firstElementChild.offsetWidth : 300) + 19;
+  const estado = () => {
+    prev.disabled = grid.scrollLeft <= 4;
+    next.disabled = grid.scrollLeft + grid.clientWidth >= grid.scrollWidth - 4;
+  };
+  prev.addEventListener('click', () => grid.scrollBy({left: -paso(), behavior: 'smooth'}));
+  next.addEventListener('click', () => grid.scrollBy({left: paso(), behavior: 'smooth'}));
+  grid.addEventListener('scroll', estado, {passive: true});
+  grid.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') next.click();
+    if (e.key === 'ArrowLeft') prev.click();
+  });
+  window.addEventListener('resize', estado);
+  estado();
+}
+
+/* Menú móvil */
+function initNav() {
+  const t = document.getElementById('nav-toggle');
+  const n = document.getElementById('nav-links');
+  t.addEventListener('click', () => {
+    const open = n.classList.toggle('open');
+    t.setAttribute('aria-expanded', open);
+    t.innerHTML = open ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+  });
+  n.addEventListener('click', e => { if (e.target.closest('a')) { n.classList.remove('open'); t.setAttribute('aria-expanded', false); t.innerHTML = '<i class="fa-solid fa-bars"></i>'; } });
+}
+
+/* ===== INICIO ===== */
+renderProductos();
+initMenuAdd();
+initEventos();
+initNav();
+if (renderGaleria()) initCarrusel();
+updateTotals();
+document.getElementById('invitados').addEventListener('input', () => updateGuestsHint(PRODUCTOS.reduce((s, p) => s + itemCounts[p.id], 0)));
+document.getElementById('year').textContent = new Date().getFullYear();
+document.querySelectorAll('[data-track="wa"]').forEach(a => a.addEventListener('click', () => track('Contact', {method: 'whatsapp'})));
+document.getElementById('event-form').addEventListener('submit', () => track('Lead', {value: Number(document.getElementById('hidden_total_pieces').value)}));
+
+// La fecha del evento no puede ser pasada
+const hoy = new Date();
+hoy.setMinutes(hoy.getMinutes() - hoy.getTimezoneOffset());
+document.getElementById('fecha').min = hoy.toISOString().slice(0, 10);
+
+// Al enviar, FormSubmit regresa a esta misma página con ?enviado=1
+document.getElementById('next-url').value = location.origin + location.pathname + '?enviado=1#cotizador';
+if (new URLSearchParams(location.search).get('enviado') === '1') {
+  const ok = document.getElementById('form-success');
+  ok.classList.add('show');
+  ok.scrollIntoView({behavior: 'smooth', block: 'center'});
+}
+</script>
+</body>
+</html>
